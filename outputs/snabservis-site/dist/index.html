@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поковка стальная в Санкт-Петербурге — Специальные стали Северо-Запада</title>
+  <meta name="description" content="Каталог стальных поковок. Подбор по марке стали, диаметру и ГОСТ, поиск товаров и формирование заявки.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/mark.svg?v=4" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=5">
+  <script src="app.js?v=13" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#catalog">Перейти к каталогу</a>
+<header>
+  <div class="header-main wrap">
+    <a class="brand" href="#" aria-label="Специальные стали Северо-Запада — главная"><img src="assets/logo.svg?v=4" alt="Специальные стали Северо-Запада" width="320" height="69"><span>Поставки металлопроката по всей России</span></a>
+    <nav class="top-nav" aria-label="Главное меню"><a href="#about">О компании</a><a href="#delivery">Доставка и оплата</a><button data-info="quality">Гарантии качества</button><a href="#contacts">Контакты</a></nav>
+    <div class="header-phone"><a href="tel:+78122130040">+7 (812) 213-00-40</a><button class="text-button" data-request="Обратный звонок">Заказать звонок</button></div>
+  </div>
+  <div class="toolbar"><div class="wrap toolbar-inner">
+    <button class="button catalog-button" id="catalog-menu-button" aria-expanded="false" aria-controls="catalog-menu"><i data-icon="menu"></i>Каталог продукции</button>
+    <button class="location" data-info="location"><i data-icon="pin"></i>Санкт-Петербург<i data-icon="chevron"></i></button>
+    <form class="search" role="search" id="search-form"><input id="search" type="search" placeholder="Поиск в разделе" aria-label="Поиск в разделе" autocomplete="off"><button aria-label="Найти товары"><i data-icon="search"></i></button></form>
+    <button class="cart-button" id="cart-button"><span class="cart-icon"><i data-icon="cart"></i><b id="cart-count">0</b></span><span>Корзина</span></button>
+  </div></div>
+  <div class="catalog-menu wrap" id="catalog-menu" hidden><div><span class="eyebrow">МЕТАЛЛОПРОКАТ</span><strong>Каталог металлопроката</strong><a href="#catalog-pokovka" data-category="forging" class="active-category">Поковка стальная <i data-icon="check"></i></a><a href="#catalog-krug" data-category="round">Круг <i data-icon="check" hidden></i></a><a href="#catalog-kvadrat" data-category="square">Квадрат <i data-icon="check" hidden></i></a><a href="#catalog-shestigrannik" data-category="hexagon">Шестигранник <i data-icon="check" hidden></i></a></div><div><strong>Подбор продукции</strong><button data-quick="round">Круглые поковки</button><button data-quick="construction">Конструкционная сталь</button><button data-quick="stock">Поковки в наличии</button></div><div class="menu-help"><strong>Нужна другая продукция?</strong><p>Укажите марку и размеры в заявке — это поможет подобрать материал.</p><button class="text-button" data-request="Подбор металлопроката">Запросить подбор</button></div></div>
+</header>
+<main class="wrap">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="#">Главная</a><span>›</span><button id="breadcrumb-catalog">Каталог</button><span>›</span><button id="breadcrumb-metal">Металлопрокат</button><span>›</span><span id="catalog-family">Чушки, заготовки, поковки</span><span>›</span><span aria-current="page">Поковка стальная</span></nav>
+  <section class="page-heading" id="catalog">
+    <div class="heading-line"><h1>Поковка стальная</h1><span class="title-count" id="title-count">23 товара</span></div>
+    <div class="heading-bottom"><p>в Санкт-Петербурге</p><button class="download-link" id="price-download"><i data-icon="download"></i>Скачать прайс-лист</button></div>
+  </section>
+  <div class="catalog-layout">
+    <section class="catalog-main" aria-label="Товары">
+      <div class="catalog-intro"><p>Стальные поковки оптом и в розницу. Подберите заготовку по марке стали, диаметру и стандарту. Уточните стоимость и сроки поставки у менеджера.</p><a href="#about">Подробнее о продукции<i data-icon="chevron"></i></a></div>
+      <div class="catalog-controls"><div><span id="result-count" aria-live="polite">23 товара</span><button id="mobile-filter" class="mobile-filter"><i data-icon="filter"></i>Фильтры</button></div><div class="sort-view"><label class="sort"><span class="sr-only">Сортировка</span><select id="sort"><option value="default">По умолчанию</option value="price-up">Сначала дешевле</option><option value="price-down">Сначала дороже</option><option value="name">По названию</option></select></label><div class="view-toggle" aria-label="Вид каталога"><button class="selected" id="list-view" aria-label="Список" aria-pressed="true"><i data-icon="list"></i></button><button id="grid-view" aria-label="Плитка" aria-pressed="false"><i data-icon="grid"></i></button></div></div></div>
+      <div id="active-filters" class="active-filters"></div>
+      <div class="table-labels"><span>Наименование товара</span><span>Количество</span><span>Цена за кг</span><span></span></div>
+      <div id="products" class="products"></div>
+      <div class="pagination-row"><span id="page-summary"></span><nav id="pagination" class="pagination" aria-label="Страницы каталога"></nav></div>
+      <p class="price-note">Цены и наличие приведены по каталогу-образцу. Итоговую стоимость и доступность необходимо уточнить перед заказом.</p>
+    </section>
+    <aside class="filter-sidebar" id="filters" aria-label="Фильтры товаров">
+      <div class="filter-heading"><h2><i data-icon="filter"></i>Фильтры</h2><button id="clear-filters">Сбросить</button></div>
+      <p class="filter-hint" id="filter-hint" hidden>Укажите нужные марку стали, диаметр и длину в комментарии к заявке.</p><form id="filter-form"><div id="filter-groups"></div><label class="stock-toggle"><input type="checkbox" name="stock"><span class="switch"></span>Только в наличии</label><button class="button apply-filter" type="submit">Показать товары</button></form>
+      <div class="help-card"><span class="help-icon"><i data-icon="headphones"></i></span><h3>Поможем с выбором</h3><p>Подберём марку стали и рассчитаем вашу заявку.</p><a href="tel:+78122130040">+7 (812) 213-00-40</a><button class="button button-outline" data-request="Консультация по подбору поковки">Получить консультацию</button></div>
+    </aside>
+  </div>
+  <section id="about" class="about-section"><div><span class="eyebrow">О ПРОДУКЦИИ</span><h2>Стальная поковка</h2><p>Поковка — заготовка для изготовления деталей машин и промышленного оборудования. Марку стали, форму и размеры выбирают с учётом условий эксплуатации и последующей обработки.</p><p>В каталоге представлены круглые поковки из различных марок стали. Используйте фильтры, чтобы найти нужный диаметр и стандарт, или сформируйте заявку на подбор.</p></div><div class="technical-notes"><details open><summary>Как выбрать поковку<i data-icon="chevron"></i></summary><p>Укажите марку стали, размер, требуемый ГОСТ и количество. Если изделие изготавливается по чертежу, добавьте требования к материалу и обработке в комментарий к заявке.</p></details><details><summary>Документы на продукцию<i data-icon="chevron"></i></summary><p>Состав сопроводительных документов, сертификаты и требования к испытаниям согласовываются для конкретной партии при оформлении заказа.</p></details><details id="delivery"><summary>Доставка и оплата<i data-icon="chevron"></i></summary><p>Доставка по Санкт-Петербургу и в регионы России. Способ отгрузки, стоимость перевозки и условия оплаты рассчитываются индивидуально с учётом объёма заказа.</p></details></div></section>
+  <section class="request-banner"><div><span class="eyebrow">ИНДИВИДУАЛЬНЫЙ ПОДБОР</span><h2>Не нашли нужную поковку?</h2><p>Укажите марку, размеры и объём — подготовьте заявку на расчёт.</p></div><button class="button" data-request="Расчёт поковки по параметрам">Оставить заявку<i data-icon="file"></i></button></section>
+</main>
+<footer id="contacts"><div class="wrap footer-main"><div class="footer-brand"><img src="assets/logo.svg?v=4" alt="Специальные стали Северо-Запада" width="270" height="58"><p>Комплексные поставки<br>металлопроката</p></div><div><span class="footer-label">ОТДЕЛ ПРОДАЖ</span><a class="footer-phone" href="tel:+78122130040">+7 (812) 213-00-40</a><a href="mailto:spb@snabservis.ru">spb@snabservis.ru</a><p>Пн–Пт, 9:00–18:00</p></div><div><span class="footer-label">САНКТ-ПЕТЕРБУРГ</span><p>Набережная Обводного канала,<br>134–136–138, литера В.Г., офис 6</p><a href="tel:88005339831">8 (800) 533-98-31</a></div><button class="button button-outline" data-request="Обратный звонок">Заказать звонок</button></div><div class="wrap footer-bottom"><span>«Специальные стали Северо-Запада». Демонстрационная версия. Не оферта.</span><button data-info="privacy">Обработка данных</button><a href="#">Наверх ↑</a></div></footer>
+<dialog id="modal" aria-labelledby="modal-title"><button class="modal-close icon-button" aria-label="Закрыть окно"><i data-icon="close"></i></button><div id="modal-content"></div></dialog>
+<div class="toast" id="toast" role="status"></div>
+</body></html>

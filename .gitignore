@@ -1,0 +1,14 @@
+# Intermediate research and one-off editing scripts.
+/work/
+
+# Unused image from the original reference website.
+/outputs/snabservis-site/dist/assets/product.webp
+
+# Local environment and operating-system files.
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
